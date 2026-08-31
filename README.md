@@ -1,5 +1,8 @@
 # Phân biệt MCP và Function Calling
 
+**Họ tên:** Đào Ngọc Duy  
+**MSSV:** 2A202601780
+
 Đây là hai khái niệm hay bị nhầm lẫn nhưng thực ra ở **hai tầng khác nhau**, và **bổ sung cho nhau** chứ không thay thế.
 
 ## Cấu trúc repo
@@ -18,13 +21,18 @@ day26-mcp/
 │   ├── weather_server.py
 │   └── weather_client.py
 │
-└── 03-production/           ← Bước 3: Auth, Tool Registry, Versioning
+├── 03-production/           ← Bước 3: Auth, Tool Registry, Versioning
     ├── README.md
     ├── auth_server.py
     ├── auth_client.py
     ├── registry.json
     ├── registry_client.py
     └── versioned_server.py
+│
+└── 04-lab/                  ← Bước 4: Weather Agent (ADK + Remote MCP)
+    ├── README.md
+    ├── mcp-server/
+    └── mcp-client/
 ```
 
 ## Quick start
@@ -47,6 +55,9 @@ python auth_client.py              # terminal 2
 
 # Production — Tool Registry
 cd 03-production && python registry_client.py
+
+# Lab 04 — Weather Agent (cần WeatherAPI + Gemini API keys)
+# Xem 04-lab/README.md để tạo các file .env và chạy server/client.
 ```
 
 ---
